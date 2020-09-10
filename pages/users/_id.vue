@@ -12,6 +12,17 @@
 
 <script>
 export default {
+  head(){
+    return {
+      titleTemplate: "%s - " + this.user.name,
+      meta: [
+        {
+          name: 'description',
+          content: this.user.name
+        }
+      ]
+    }
+  },
   validate({params}) {
     return /^\d+$/.test(params.id)
   },
