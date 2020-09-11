@@ -19,6 +19,30 @@ export default {
         {
           name: 'description',
           content: this.user.name
+        },
+        {
+          property: 'og:title',
+          content: this.user.name
+        },
+        {
+          property: 'og:locale',
+          content: 'ru_RU'
+        },
+        {
+          property: 'og:description',
+          content: 'Пользователь'
+        },
+        {
+          property: 'og:url',
+          content: 'тут впихнуьб урл'
+        },
+        {
+          property: 'og:site_name',
+          content: 'тут название сайта'
+        },
+        {
+          property: 'og:image',
+          content: 'url для картинки'
         }
       ]
     }
